@@ -47,8 +47,6 @@ If you are not seeing the text in your `lessonHider.html` it's time to double ch
 
 Your directive in your html should look like this: `<lesson-hider></lesson-hider>`
 
-<!-- STATRT RIGHT HRE!!!!!!!!!!! -->
-
 It can be helpful to think of a directive as a self contained route: Wherever you place that directive, it will display the html template you have given it.
 Before moving on to adding functionality, let's add the `restrict` property to our directive's return object. Restrict determines how you can use the directive
 in your DOM. There are three options: `'E'`, `'A'`, and `'C'`. These stand for Element, Attribute, and Class.
@@ -333,3 +331,4 @@ prohibited. Excerpts and links may be used, provided that full and clear credit 
 content.
 
 <img src="https://devmounta.in/img/logowhiteblue.png" width="250">
+

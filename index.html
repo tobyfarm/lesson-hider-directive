@@ -1,38 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div class="" ng-app="directivePractice" ng-controller='lessonCtrl'>
-<div class="">
+ <!DOCTYPE html>
+ <html lang="en">
 
-</div>
-<ul>
+<head>
+     <meta charset="UTF-8">
+     <title>TITLE</title>
+     <meta name="description" content="DESCRIPTION">
+  
+ </head>
 
+ <body ng-app="directivePractice">
 
-<lesson-hider ng-repeat="lesson in lessons" test="test" lessons="lesson"></lesson-hider>
-
-
-</ul>
-
-<div class="">
-
-</div>
-
-
-
-
-
-
-
+   <div ng-controller="lessonCtrl">
+    <div>
+      {{test}}
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js" charset="utf-8"></script>
-    <script src="app.js" charset="utf-8"></script>
-  <script src="js/lessonCtrl.js" charset="utf-8"></script>
-  <script src="js/lessonHider.js" charset="utf-8"></script>
-  <script src="js/lessonService.js" charset="utf-8"></script>
-  </body>
-</html>
+    <ul>
+      <lesson-hider ng-repeat="lesson in lessons" lesson="lesson" day-alert="announceDay(lesson,day)"></lesson-hider>
+    </ul>
+
+   </div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+ <script src="app.js"></script>
+ <script src="lessonService.js"></script>
+ <script src="lessonCtrl.js"></script>
+ <script src="lessonHider.js"></script>
+ </body>
+
+ </html>
